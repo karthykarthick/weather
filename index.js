@@ -19,7 +19,7 @@ weather.appendChild(weather_info)
 input.addEventListener('change',(data)=>{
     let query = data.target.value
     const api_key = '5306a8a8ab844118ab9101153232705'
-    const url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${query}&aqi=no`
+    const url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${query}&aqi=no`
 
     fetch(url).then((res)=>res.json()).then((data)=>{
         console.log(data);
