@@ -36,8 +36,6 @@ input.addEventListener('change',(data)=>{
         let h3 = document.createElement('h2')
         h3.innerText = data.location.name
         weather_info.appendChild(h3)
-
-    
     });
 })
 
